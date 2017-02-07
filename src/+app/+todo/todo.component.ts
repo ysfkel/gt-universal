@@ -1,6 +1,7 @@
-import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ViewEncapsulation,OnInit } from '@angular/core';
 
 import { ModelService } from '../shared/model/model.service';
+
 import { Todo } from './todo.schema'
 
 
@@ -11,7 +12,7 @@ import { Todo } from './todo.schema'
   styleUrls: [ './todo.component.css' ],
   templateUrl: './todo.component.html'
 })
-export class TodoComponent {
+export class TodoComponent implements OnInit {
 
   todos: Todo[];
   newTodo: Todo;
@@ -20,7 +21,11 @@ export class TodoComponent {
   constructor(public model: ModelService) {
     // we need the data synchronously for the client to set the server response
     // we create another method so we have more control for testing
-    this.universalInit();
+   // this.universalInit();
+  }
+
+  ngOnInit(){
+  this.universalInit();
   }
 
   addTodo() {

@@ -1,0 +1,15 @@
+.image-container{
+        width: 500px;
+           display: inline-block;
+}
+
+.header-info{
+        display: inline-block;
+    vertical-align: top;
+}
+
+.details-container{
+        width: 65%;
+    background: red;
+    margin: 0 auto;
+}
