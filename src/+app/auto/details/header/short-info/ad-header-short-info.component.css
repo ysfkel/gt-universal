@@ -1,3 +1,7 @@
 .image-container{
     width:400px;
 }
+
+.car-info span{
+     display:inline-flex;
+}

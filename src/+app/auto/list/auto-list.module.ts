@@ -12,6 +12,7 @@ import { UtillityModule } from '../../shared/services/utillities/utillities.modu
 import { AutoFeatures } from '../details/feature/features.component';
 import { AdDetailsTitle } from '../details/header/ad-title/ad-details-title.component';
 import { AdHeaderShortInfo } from '../details/header/short-info/ad-header-short-info.component';
+import { ShardComponentsModule } from '../../shared/components/shared-components.module';
 
 @NgModule({
   imports: [
@@ -22,6 +23,7 @@ import { AdHeaderShortInfo } from '../details/header/short-info/ad-header-short-
    ,GTImageModule
    ,GTEmailModule
    ,UtillityModule
+   ,ShardComponentsModule
   ],
   declarations: [
     AutoList,

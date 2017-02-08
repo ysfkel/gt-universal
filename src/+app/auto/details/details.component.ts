@@ -17,8 +17,9 @@ import { Email } from '../../shared/components/email/gt-email.component';
             <image-detail [url]="auto.url"></image-detail>
          </div>
          <div class="header-info">
-            <ad-details-title></ad-details-title>
-            <ad-header-short-info></ad-header-short-info>
+            <ad-details-title [data]="auto.title"></ad-details-title>
+            <price [data]="auto.price"></price>
+            <ad-header-short-info [data]="shortInfo"></ad-header-short-info>
          </div> 
         </div>
     </div>
@@ -33,6 +34,7 @@ export  class AutoDetails implements OnInit{
 
     auto:Array<any>;
      dialogRef: MdDialogRef<Email>;
+     shortInfo:any;
 
     constructor(private route:ActivatedRoute,public dialog: MdDialog){
     }
@@ -55,11 +57,20 @@ export  class AutoDetails implements OnInit{
           .data
           .subscribe((item:any)=>{
               this.auto=item.autoItem;
+              this.setShortInfo(this.auto);
               console.log('item',this.auto);
 
           })
 
 
+      }
+
+      setShortInfo(auto){
+          this.shortInfo={
+              mileage:auto.mileage,
+              model:auto.model,
+              carType:auto.carType
+          }
       }
 
 
