@@ -7,7 +7,7 @@ import { Http } from '@angular/http';
     selector:'auto-list',
     styleUrls:['auto-list.component.css'],
     template:`
-          <div class="list-container">
+          <div class="listings-container">
              <auto-list-item [item]="i" *ngFor="let i of items"></auto-list-item> 
           </div>
             

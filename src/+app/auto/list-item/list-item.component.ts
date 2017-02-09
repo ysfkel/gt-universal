@@ -1,4 +1,4 @@
-import { Component ,OnInit } from '@angular/core';
+import { Component ,OnInit,ViewEncapsulation } from '@angular/core';
 
 
 
@@ -6,7 +6,9 @@ import { Component ,OnInit } from '@angular/core';
     selector:'auto-list-item',
     inputs:['item'],
     styleUrls:['list-item.component.css'],
-    templateUrl:'list-item.component.html'
+    templateUrl:'list-item.component.html',    
+    
+    encapsulation:ViewEncapsulation.Native
 })
 export class ListItem implements OnInit{
 
