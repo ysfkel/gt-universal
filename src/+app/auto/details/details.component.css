@@ -1,15 +1,129 @@
 .image-container{
-        width: 500px;
-           display: inline-block;
+	width: 50%;
+	display: inline-block;
 }
 
 .header-info{
-        display: inline-block;
-    vertical-align: top;
+	display: inline-block;
+	vertical-align: top;
+	background: #f6f7f9;
+    padding: 30px;
+	box-sizing: border-box;
+	position: relative;
 }
 
 .details-container{
-        width: 65%;
-   border:1px solid grey;
-    margin: 0 auto;
+	/*border:1px solid grey;*/
+	margin: 0 auto 48px;
+	font-family: "Open Sans",sans-serif;
+}
+.image-with-header{
+	display: flex;
+	display: -ms-flex;
+	display: -moz-flex;
+}
+.title h1{
+	margin-bottom: 0;
+	font-size: 42px;
+    text-transform: uppercase;
+    font-weight: 300;
+	margin-top: 0;
+	line-height: 1.15;
+}
+.ad-header-short-info h3{
+	margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+price{
+	font-size: 36px;
+    font-weight: 600;
+}
+.description h4,
+.features h4,
+.others h4{
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+.button-group{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+
+	align-content: flex-end;
+    position: absolute;
+    width: 90%;
+    left: 30px;
+    bottom: 30px;
+}
+.button-group a{
+	width: 50%;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    background: rgb(96, 205, 246);
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.button-group a:hover{
+	background-color: #3fa5d7;
+}
+.button-group a:not(:first-child){
+	margin-left: 2px;
+	background: rgb(56, 158, 207);
+}
+.button-group a:not(:first-child):hover{
+	background: rgb(56, 158, 207);
+}
+.description .list{
+	display: flex;
+}
+.description dl{
+	width: 48%;
+	display: inline-block;
+}
+.description dl:first-child{
+	margin-right: 2%;
+}
+.description dt,
+.description dd{
+	display: inline-block;
+	width: 49%;
+	margin-bottom: 10px;
+}
+.description dd{
+	margin-left: 0;
+
+}
+.others{
+
+}
+.tools{
+	display: flex;
+}
+.tools .share,
+.tools .emi-calc{
+	width: 48%;
+}
+.tools .emi-calc{
+	margin-right: 2%;
+}
+/*.tools h3{
+	font-size: 30px;
+	text-align: left;
+	margin: 48px 0 25px 0;
+	text-transform: uppercase;
+    font-weight: 300;
+}*/
+.calc,
+.share-block{
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
 }

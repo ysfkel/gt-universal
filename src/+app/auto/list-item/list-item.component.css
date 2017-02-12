@@ -14,24 +14,31 @@
 .listings-container{
     font-size: 0;
     margin-left: -24px;
-    margin-top: -48px;
+    margin-bottom: 48px;
 }
 .card{
-    min-height: 365px;
+    /*min-height: 365px;*/
 }
 .card a{
     text-decoration: none;
     color: #000;
+    display: block;
 }
-.card-wrapper{
+auto-list-item{
     width: 23.0452675%;
     display: inline-block;
     margin-left: 24px;
-    margin-top: 48px;
+    margin-top: 24px;
     vertical-align: top;
 }
+auto-list-item:nth-child(1),
+auto-list-item:nth-child(2),
+auto-list-item:nth-child(3),
+auto-list-item:nth-child(4){
+    margin-top: 0;
+}
 .md-card{
-    padding: 0;
+    /*padding: 0;*/
 }
 .md-card .image img{
     width: 96%;
@@ -51,6 +58,7 @@
 .content{
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 0;
 }
 .md-card-header{
     height: auto;

@@ -108,3 +108,7 @@ footer .gt-icon:before{
     vertical-align: middle;
 }
 /* Footer css ends here */
+/* common */
+.title h1{
+    margin-bottom: 0;
+}

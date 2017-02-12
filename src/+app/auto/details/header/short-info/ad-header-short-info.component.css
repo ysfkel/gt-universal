@@ -5,3 +5,32 @@
 .car-info span{
      display:inline-flex;
 }
+.car-info .type{
+    color: #fff;
+    background: #803e96;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+.car-info h3{
+    font-size: inherit;
+    text-transform: capitalize;
+}
+.car-info .mileage{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.car-info .mileage h3:before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #8e8e93;
+    margin: 0 15px 0 0;
+}
+.location{
+    color: #8e8e93;
+    font-size: 14px;
+    margin-bottom: 15px;
+}

@@ -7,9 +7,9 @@ import { Http } from '@angular/http';
     selector:'auto-list',
     styleUrls:['auto-list.component.css'],
     template:`
-          <div class="listings-container">
+          <div class="listings-container"><h2>Most recent listings</h2><div class="card-wrapper">
              <auto-list-item [item]="i" *ngFor="let i of items"></auto-list-item> 
-          </div>
+          </div></div>
             
     `
 })
