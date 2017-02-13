@@ -5,7 +5,6 @@ import { Email } from './gt-email.component'
 import { EmailDialog } from './gt-email-dialog.component'
 import { MaterialModule,MdDialogModule} from '@angular/material';
 
-
 @NgModule({
   imports: [
    MaterialModule.forRoot(),

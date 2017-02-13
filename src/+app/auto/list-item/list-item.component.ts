@@ -13,9 +13,10 @@ import { Component ,OnInit,ViewEncapsulation } from '@angular/core';
 export class ListItem implements OnInit{
 
     item:any;
+    imgSrc:string;
 
     ngOnInit(){
-        console.log(this.item)
+      this.imgSrc=`assets/${this.item.url}`;
     }
     
 }
